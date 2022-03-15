@@ -1,0 +1,56 @@
+git is the version control system for software developers, where we can track and manage changes and the versions of the softwares.
+
+For initializing the git repo we have to do like = git init
+
+There are mainly four stages of the git 
+1. Untracked 
+2. Unmodified 
+3. Modified 
+4. Staged 
+
+for commiting in the github we have to put the files in the staged area.
+
+> git status = for seeing what are the files we have in the stagging area.
+> git add filename = for adding the file in the stagging area.
+> git commit -m "Commit message" = for commiting the files
+
+Note : Only add those files in the stagging area which u want to commit only.
+
+> git log = for seeing how many commits we have made the details about them 
+> git add . = for adding all teh files in the stagging area
+
+when sometimes we have jumbled some parts and then we want to track back to the last commit of the file.
+but the modified file should not be in the stagged area. So for moving the file in the last commit we have to do like 
+
+> git checkout filename = this will revert the filename to the last commit of that file.
+
+for sending the repository on the remote file we have to do it by creating the repo and then copying the 
+repo link and then write the git remote add command.
+> git remote add origin https://github.com/Dhairya-Rupala/Story.git
+> git push -u origin master/branch name = for pushing the files to the directories 
+
+DS_store file stores the data about how the data icons are arranged in the repo, so we do not want to add them into the remote repo.
+
+for removing all the files from the stagging area 
+git rm --cached -r .
+git rm --cached -r filename
+
+>touch .gitignore
+In the .gitignore file when we want to ignore somefile we can write the file name in there.
+# = for comments 
+*.extension = this will ignore all the files with the given extension 
+
+For clonning the repo in the local system 
+git clone URL== when we clone the repo in the local system the git file also comes along,
+when we do the git status in the repo we can see the previous commits.
+ 
+> branching and merging 
+for creating new branch - >git branch bname
+for checking howo many branches we have - >git branch
+for switching to another branch >git checkout bname
+
+for merging to the branch A, first switch to the branch A and then
+>git merge bnameWeWantToMerge
+
+forking is just like copying the repository in our remote github, and after changing when we do the PR
+and if get approved, the main repo will be updated also.
