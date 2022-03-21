@@ -1,0 +1,13 @@
+React = A javascript library for building user interfaces (frontend)
+A component based framework.
+
+In the basic web development, we always try to keep the HTML, JS and CSS files to keep apart, but what
+react does is that, it combines some part of all of the files, so that each and every component will
+have its own functionality, style and structure.
+
+Each component behaves as the one seperate working part on their own. When we change or update one 
+component or a part of the website, the react will rerender it effectively, ny comparing the changes,
+it is called diffing. It compares the DOM tree and just render the changes.
+
+In most of the react application there will be a div called with the id equals to the root, in which 
+all the react code will go there.
