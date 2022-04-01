@@ -44,3 +44,128 @@ arr.length; = returns the length of the array list
 arr.includes(item) = true or false
 arr.push(item) = push the item at the end of the array 
 arr.pop; = removes the last item from the array 
+
+
+
+DOM MANIPULATION 
+JS also comes with the same types as the CSS, inline, internal and the external js
+for,
+
+Inline js = in the specific html tag, make the attribute named onload="some js code
+ snippet" (In the string both the " and ' works)
+
+Also internal js is, in the body we will write the <script type="text/javascript">
+</script> tag, and then write the js code, when the browser hits this line it will
+run the code.
+
+Also the external js we have to include the <script tag with the src> and link it to 
+the js file. 
+
+Always put the css link in the head section and put the js script at the end of the 
+body section.
+
+
+DOM = Document object model interpretes the HTML element and the HTML pages 
+as the set of objects that can be manipulated.
+
+In the chrome developer tools we can navigate within the DOM tree by 
+doocument.firstElementChild... so on
+doocument.lastElementChild 
+
+As soon as we fetched the object that we want we can save it in the variable and
+manipulate with it.
+
+obj.innerHTML = some html or text
+obj.style.color = some color for changing the text color
+document.querySelector("input").click() = this will check the  checkbox or click the 
+other input type
+
+Every object in the DOM can have properties and the methods, the properties of the 
+object defines how is the object and the methods define what the object can do.
+
+document.querySelector() will give the first matched object
+document.querySelectorAll() will give the array of the matched object
+document.getEelementsByTagName("some tag") = gives the list of all the tags 
+document.getElementsByClassName(class) = gives the list of the all the class matched
+document.getEelementById(id) = in one single HTML there lie only one unique id
+
+In the querySelector we can give any type of query and it will fetch the object 
+
+Heiriarchical selector 
+parentTag childTag 
+tag.class = fetch theh object with the specified tag and also have the class
+
+When we set the values using the queryselector we will set the values as the string
+
+Always make the seperate files, HTML CSS and the JS
+document.querySelector().classList = gives the classList of the element 
+document.querySelector().classList.add(added class)
+document.querySelector().classList.remove(added class)
+document.querySelector().classList.toggle(added class) = if there remove, if not add
+document.querySelector().innerHTML; gives the innerHTML 
+document.querySelector().textContent = this gives the textContent only
+document.querySelector().attributes = will give the list of all the attributes 
+document.querySelector().getAttribute("attr name") = gives the value of attr
+document.querySelector().getAttribute("attr name",attr value)
+
+for adding the event listener to any element, first we have to fetch that 
+object and then call the method addEeventListener(eventName,function handling the event)
+
+Also we can do it by also doing like 
+object.addEeventListener(event,function(){
+    //Method is anonymous method
+})
+
+
+Playing sound with the javascript
+var audio = new Audio("songfile");
+audio.play();
+
+in the CSS we can specify the background image by 
+background-image: url(path of  the image)
+
+this keyword gives the identity of the object that will triiger the event listener.
+
+For creating the js object we have to create them by using the dict type notation.
+var obj = {
+    name:"some name",
+    age:some age,
+    langs : [soome langs]
+}
+
+for accessing the attributes obj.atr
+
+In the constructor function of js the first letter has to be capitalized.
+function Func(name,age){
+    this.name=name;
+    this.age=age;
+    this.doSome = fuction(){
+        console.log("Hey boii");
+    }
+}
+
+var obj1 = new Func(params);
+obj1.doSome()
+
+switch(expression){
+    case c1:
+        action;
+        break;
+    default:
+        action;
+        break;
+}
+
+We can also add the event listener for the "keypress" event. But in this case we 
+are waiting for the keyboard press, so here we do not have to add the event 
+listener to the whole keyboard, instead we can add the event listener to the 
+whole document. by document.addEeventListener("keypress",response);
+
+For knowing which event has triggered the event listener we can pass the function
+parameter event in the callback function 
+document.addEeventListener(some event,function(event){
+
+});
+when we look into the event we will get whole bunch of properties of that event 
+and we can access the attribute by doing event.attr and can perform the specified 
+action.
