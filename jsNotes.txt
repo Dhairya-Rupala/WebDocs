@@ -1,0 +1,46 @@
+ES = echma script 
+JS = interpreted language 
+
+alert("Message") = alerts the message 
+
+DATA TYPES 
+string 
+numbers 
+boolean 
+
+typeof(some data) = returns the datatype of that given data
+prompt(Some message) = this generates the alert and the user can enter some data into it.
+
+for decalring the variable,
+var varname = some data;
+varname can only contain numbers , letters, dollar and underscore
+
+string datatype 
+s.length() = size of the string s
+s.slice(start,end) = does not include end, and take the string from start.
+s.toUpperCase() = returns the upper cased string
+
+All the operators from the cpp will work in the js, also the division operation will directly 
+give the float values. Also here the modulo operation can take the float values.
+
+function funcName(){return something;}
+Math.floor(some number) = rounding off the number
+Math.random() = generate the 16 decimel number bwn 0-0.99999999999
+console.log() is used for the debugging purpose mainly
+
+if and else statements are same as cpp in the js
+=== => This operator also checks the values and the datatypes 
+== => This operator just cheks the value of the variable
+!== => not equal to but also cheks the datatypes of the variables
+
+Leap year 
+Div by 400 = yes
+Div by 100 = no
+Div by 4 = yes
+
+var arr = [data1,data2] Here the list can contain any datatypes 
+arr[index]
+arr.length; = returns the length of the array list
+arr.includes(item) = true or false
+arr.push(item) = push the item at the end of the array 
+arr.pop; = removes the last item from the array 
